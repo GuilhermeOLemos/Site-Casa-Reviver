@@ -1,13 +1,363 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa Reviver</title>
-    <link rel="stylesheet" href="style.css">
-    <script src=""></script>
+    <link rel="icon" type="icon" href="assets/images/ico/casaReviverLogo.ico">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    
+    <style>
+        .main-container {
+          background-color: #ffd058;
+          display: flex;
+          flex-direction: column;
+        }
+        
+        .main-image {
+          aspect-ratio: 1.43;
+          object-fit: auto;
+          object-position: center;
+          width: 100%;
+          z-index: 10;
+        }
+        
+        @media (max-width: 991px) {
+          .main-image {
+            max-width: 100%;
+          }
+        }
+        
+        .content-wrapper {
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          align-self: center;
+          position: relative;
+          min-height: 1881px;
+          margin-top: -20px;
+          width: 100%;
+          max-width: 1120px;
+          padding-top: 80px;
+          align-items: start;
+        }
+        
+        @media (max-width: 991px) {
+          .content-wrapper {
+            max-width: 100%;
+          }
+        }
+        
+        .background-image {
+          position: absolute;
+          inset: 0;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+        
+        .footer-section {
+          position: relative;
+          background-color: #1e1e1e;
+          display: flex;
+          margin-top: 1449px;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          padding: 43px 60px 16px;
+        }
+        
+        @media (max-width: 991px) {
+          .footer-section {
+            max-width: 100%;
+            margin-top: 40px;
+            padding: 0 20px;
+          }
+        }
+        
+        .footer-content {
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+        }
+        
+        @media (max-width: 991px) {
+          .footer-content {
+            max-width: 100%;
+          }
+        }
+        
+        .footer-columns {
+          display: flex;
+          width: 100%;
+          gap: 20px;
+        }
+        
+        @media (max-width: 991px) {
+          .footer-columns {
+            max-width: 100%;
+            flex-wrap: wrap;
+          }
+        }
+        
+        .left-column {
+          justify-content: center;
+          align-self: start;
+          margin-top: 11px;
+          flex-grow: 1;
+        }
+        
+        @media (max-width: 991px) {
+          .left-column {
+            max-width: 100%;
+          }
+        }
+        
+        .footer-links {
+          gap: 20px;
+          display: flex;
+        }
+        
+        @media (max-width: 991px) {
+          .footer-links {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0px;
+          }
+        }
+        
+        .info-column {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+         : 38%;
+        }
+        
+        @media (max-width: 991px) {
+          .info-column {
+            width: 100%;
+          }
+        }
+        
+        .info-wrapper {
+          display: flex;
+          padding-top: 12px;
+          flex-direction: column;
+          font-size: 16px;
+          color: #edeef0;
+          font-weight: 400;
+        }
+        
+        @media (max-width: 991px) {
+          .info-wrapper {
+            margin-top: 40px;
+          }
+        }
+        
+        .info-title {
+          leading-trim: both;
+          text-edge: cap;
+          font-family: Inter, sans-serif;
+          font-weight: 700;
+        }
+        
+        .info-text {
+          text-align: center;
+          leading-trim: both;
+          text-edge: cap;
+          font-family: Inter, sans-serif;
+          margin-top: 12px;
+        }
+        
+        .center-column {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 40%;
+          margin-left: 20px;
+        }
+        
+        @media (max-width: 991px) {
+          .center-column {
+            width: 100%;
+          }
+        }
+        
+        .list-wrapper {
+          display: flex;
+          flex-grow: 1;
+          padding-top: 12px;
+          flex-direction: column;
+          font-size: 16px;
+          color: #edeef0;
+          font-weight: 400;
+        }
+        
+        @media (max-width: 991px) {
+          .list-wrapper {
+            margin-top: 40px;
+          }
+        }
+        
+        .list-title {
+          leading-trim: both;
+          text-edge: cap;
+          font-family: Inter, sans-serif;
+          font-weight: 700;
+        }
+        
+        .list-item {
+          text-align: center;
+          leading-trim: both;
+          text-edge: cap;
+          font-family: Inter, sans-serif;
+          margin-top: 8px;
+        }
+        
+        .right-column {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 22%;
+          margin-left: 20px;
+        }
+        
+        @media (max-width: 991px) {
+          .right-column {
+            width: 100%;
+          }
+        }
+        
+        .details-wrapper {
+          display: flex;
+          padding-top: 12px;
+          flex-direction: column;
+          font-size: 16px;
+          color: #edeef0;
+          font-weight: 400;
+        }
+        
+        @media (max-width: 991px) {
+          .details-wrapper {
+            margin-top: 40px;
+          }
+        }
+        
+        .details-title {
+          leading-trim: both;
+          text-edge: cap;
+          font-family: Inter, sans-serif;
+          font-weight: 700;
+        }
+        
+        .details-text {
+          text-align: center;
+          leading-trim: both;
+          text-edge: cap;
+          font-family: Inter, sans-serif;
+          margin-top: 12px;
+        }
+        
+        .logo-section {
+          display: flex;
+          flex-direction: column;
+          filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.15)) drop-shadow(0px 9px 9px rgba(0, 0, 0, 0.13)) drop-shadow(0px 21px 12px rgba(0, 0, 0, 0.08)) drop-shadow(0px 37px 15px rgba(0, 0, 0, 0.02)) drop-shadow(0px 58px 16px rgba(0, 0, 0, 0));
+          overflow: hidden;
+          position: relative;
+          aspect-ratio: 1.13;
+          align-items: end;
+          font-size: 3px;
+          color: var(--Off-White, #f5f5f5);
+          font-weight: 400;
+          text-align: center;
+          padding: 11px 60px 80px;
+        }
+        
+        .logo-image {
+          position: absolute;
+          inset: 0;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+        
+        .logo-title {
+          position: relative;
+          leading-trim: both;
+          text-edge: cap;
+          font-family: Inter, sans-serif;
+          background-color: var(--Off-White, #f5f5f5);
+          border-radius: 50%;
+          width: 36px;
+          align-items: center;
+          justify-content: center;
+          height: 36px;
+          padding: 0 9px;
+        }
+        
+        .footer-note {
+          color: #edeef0;
+          leading-trim: both;
+          text-edge: cap;
+          align-self: center;
+          margin-top: 25px;
+          font: 400 16px Inter, sans-serif;
+        }
+      </style>
+      
+      <div class="main-container">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5be06c7ad27c0d0249f09db2fae683ce16ed4f64ba2faa82e6c1c8f2beb33cd8?apiKey=0b81a5c8520043f8b9f7013efdd805f3&" class="main-image" alt="Main visual content" />
+        <div class="content-wrapper">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0ac5a86dbc84768d89c2d4656761e8c4ebbdab42f35017ce087597f68b3f834d?apiKey=0b81a5c8520043f8b9f7013efdd805f3&" class="background-image" alt="" />
+          <footer class="footer-section">
+            <div class="footer-content">
+              <div class="footer-columns">
+                <section class="left-column">
+                  <!-- Content for left column if needed -->
+                </section>
+                <div class="footer-links">
+                  <section class="info-column">
+                    <div class="info-wrapper">
+                      <h2 class="info-title">Titulo</h2>
+                      <p class="info-text">Lorem Ipsum</p>
+                      <p class="info-text">Lorem Ipsum</p>
+                      <p class="info-text">Lorem Ipsum</p>
+                      <p class="info-text">Lorem Ipsum</p>
+                    </div>
+                  </section>
+                  <section class="center-column">
+                    <div class="list-wrapper">
+                      <h2 class="list-title">Casa Reviver</h2>
+                      <p class="list-item">História</p>
+                      <p class="list-item">Eventos</p>
+                      <p class="list-item">Matrículas</p>
+                      <p class="list-item">Recrutamento</p>
+                      <p class="list-item">Lorem Ipsum</p>
+                    </div>
+                  </section>
+                  <section class="right-column">
+                    <div class="details-wrapper">
+                      <h2 class="details-title">Titulo</h2>
+                      <p class="details-text">Lorem Ipsum</p>
+                      <p class="details-text">Lorem Ipsum</p>
+                      <p class="details-text">Lorem Ipsum</p>
+                      <p class="details-text">Lorem Ipsum</p>
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <section class="logo-section">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/fb6cab08646d1bfe9ebb9cb041334a0ae444ed1c46d30f65a41acd00edd47467?apiKey=0b81a5c8520043f8b9f7013efdd805f3&" class="logo-image" alt="BlackCode Logo" />
+                <div class="logo-title">BlackCode Logo</div>
+              </section>
+              <div class="footer-note">Todos os direitos reservados © 2021 Casa Reviver</div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
