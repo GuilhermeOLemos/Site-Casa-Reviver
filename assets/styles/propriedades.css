@@ -1,0 +1,23 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;900&display=swap'); */
+/* 
+@font-face {
+    font-family: 'Disclaimer';
+    src: url(/import/disclaimer-classic.otf);
+} */
+
+:root {
+    --color-text-white: #F0F0F0;
+    --color-text-black: #131313;
+    
+    --color-black: #131313;
+    --color-yellow: #FFD058;
+    --color-hover-yellow: #FFB800;
+
+    --color-shadow: #0000008e;
+    --color-glass: #00000059;
+    --color-borderglass: #60606080;
+
+    --bg-default: #F5F5F5;
+}

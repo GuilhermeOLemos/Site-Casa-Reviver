@@ -1,0 +1,29 @@
+@import url(propriedades.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container{
+    width: 100vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section´:nth-of-type(1){
+    width: 100vw;
+    height: 20vh;
+    overflow: hidden;
+
+    background-color: aqua;
+}
+
+#section_capa > img {
+    background-size: cover;
+    visibility: hidden;
+    
+}
