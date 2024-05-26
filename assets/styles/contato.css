@@ -1,7 +1,88 @@
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+@import url(/assets/styles/componentes.css);
+
+@import url(componentes.css);
+
+* {
+    /* asterístico sever para atribuir caracteristicas a todos os elementos */
+    box-sizing: border-box;
+    /* considera a borda e margem para calcular o tamanho do elemento  */
+    margin: 0;
+    /* define margem igual a zero */
+    scroll-behavior: smooth;
+}
+
+
+.contato_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
+
+#contatos {
+  color: #131313;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 100px 
+}
+
+/*
+@media (max-width: 991px) {
+  #contatos {
+    max-width: 100%;
+    font-size: 40px;
+  }
+}
+*/
+
+#legenda_contatos {
+  max-width: 45%;
+  color: #1e1e1e;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+/*
+@media (max-width: 991px) {
+  #legenda_contatos {
+    max-width: 55%;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
+*/
+
+.divisor {
+  background-color: #d9d9d9;
+  align-self: stretch;
+  max-height: 1%;
+  margin: 40px 50px 40px 200px;
+  width: 1050px;
+}
+
+/*
+@media (max-width: 991px) {
+  .divisor {
+    max-width: 80%;
+  }
+}
+*/
+
+.meios_contato {
+  display: inline-block;
+  max-width: 627px;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 200px;
+}
+
+#telefone-icone, #celular-icone, #email-icone{
+  width: 10%;
+  color: #FFD058;
+  margin-bottom: 16px;
+}
+
+#voluntario {
+  margin-top: 30px;
+  font-size: 17.6px;
 }

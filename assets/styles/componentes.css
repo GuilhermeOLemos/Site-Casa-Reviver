@@ -1,3 +1,10 @@
+@import url(propriedades.css);
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
 /* botão padrão */
 .default {
     display: flex;
@@ -41,7 +48,7 @@
 }
 
 .small_button {
-    font-size: 2vh;
+    font-size: 3vh;
     padding: 1vh 1vw;
 }
 
@@ -50,94 +57,30 @@
 }
 
 /* menu */
-li {
-    display: inline-block;
-}
-
-li a {
-    text-decoration: none;
-    display: inline-block;
-    color: #fff;
-    font-family: Righteous, Raleway, sans-serif;
-    font-weight: lighter;
-    font-size: 3vh;
-    padding: 0 20px;
-}
-
-.hover-link::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #ff8000;
-    transition: width .3s;
-}
-
-.hover-link:hover::after {
+.menu_object{
     width: 100%;
-    transition: width .3s;
-    cursor: pointer;
-}
-
-
-.menu {
-    background: var(--color-black);
-
-    padding: 2vh 10vh;
+    height: 3.1em;
     position: sticky;
     top: 0;
 
-    display: flex;
-    justify-content: space-between;
-
     box-shadow: 0 1px 20px var(--color-shadow), 0 -1px 20px var(--color-shadow);
 
-}
-
-.menu figure {
-    width: 15vw;
-    height: 2vw;
-
-    background-image: url(/assets/images/webp/casaReviverEscrita.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    transition: 150ms ease-in-out;
-}
-
-.menu figure:hover {
-    cursor: pointer;
+    z-index: 9999;
 }
 
 /* footer */
-.footer {
-    height: fit-content;
-    padding: 12vh 5vw;
+.footer_object{
+    width: 100%;
+    height: 16em;
+    top: 0;
 
-    display: flex;
-    justify-content: space-between;
+    /* position: sticky;
+    bottom: 0; */
 
     background: var(--color-black);
     box-shadow: 0 1px 20px var(--color-shadow), 0 -1px 20px var(--color-shadow);
-}
 
-.footer div {
-    display: flex;
-    flex-direction: column;
-    /* gap: 10px; */
-}
-
-.footer a {
-    opacity: 50%;
-    text-decoration: none;
-    color: var(--color-text-white);
-}
-
-.footer figure{
-    width: 20vw;
-    height: 30vh;
-    background: center / contain no-repeat url(/assets/images/ico/casaReviverLogo.ico);
+    z-index: 9999;
 }
 
 
@@ -161,13 +104,13 @@ li a {
 }
 
 h1 {
-    font-size: 4vw;
+    font-size: 2.5vw;
     color: var(--color-text-black);
     text-transform: uppercase;
 }
 
 h4 {
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     color: var(--color-text-white);
     text-transform: uppercase;
     margin: 8px 0;
@@ -182,4 +125,15 @@ p {
 .default_link:hover {
     transition: 100ms ease-in-out;
     color: var(--color-hover-yellow);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;900&display=swap');
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
