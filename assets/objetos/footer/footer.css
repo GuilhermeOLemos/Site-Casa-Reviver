@@ -1,0 +1,45 @@
+@import url(/assets/styles/componentes.css);
+@import url(/assets/styles/propriedades.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+div:has(h4)>a {
+    margin: 6px 0 0 6px;
+}
+
+
+footer {
+    height: fit-content;
+    padding: 12vh 5vw;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: var(--color-black);
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+.footer a:not(:has(figure)){
+    opacity: 80%;
+    text-decoration: none;
+    color: var(--color-text-white);
+}
+
+.footer figure {
+    width: 10em;
+    height: 10em;
+    background-color: red;
+    background: center / contain no-repeat url(/assets/images/ico/casaReviverLogo.ico);
+}
