@@ -12,41 +12,84 @@
 
 
 
+li {
+    display: inline-block;
+    color: white;
+}
+
+.btn {
+    padding: 0.5em 2vw;
+    background: var(--color-yellow);
+    color: black;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transition: ease-in-out 150ms;
+
+    background: var(--color-hover-yellow);
+}
+
+li a {
+    text-decoration: none;
+    display: inline-block;
+    color: currentColor;
+    font-family: Righteous, Raleway, sans-serif;
+    font-weight: lighter;
+    font-size: 1em;
+    padding: 0 20px;
+}
 
 
-/* 
-nav {
-    width: inherit;
-    height: 50px;
+.hover-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff8000;
+    transition: width .3s;
+}
+
+.hover-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+    cursor: pointer;
+}
+
+
+.menu {
+    background: var(--color-black);
+
+    padding: 0.5em 5em;
+    position: sticky;
+    top: 0;
 
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 0 10px;
+    justify-content: space-between;
 
-    color: #ffffff;
+    /* box-shadow: 0 1px 20px var(--color-shadow), 0 -1px 20px var(--color-shadow); */
 
-    /*background: radial-gradient(1257.88% 48.3% at 51.7% 50%, #302A2A 0%, #211B1B 100%);
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
-    background: var(--color-orange);
 }
 
-a:has(#logo-icon) {
-    margin: -20px 100px 0 0;
+.menu figure {
+    width: 15vw;
+    height: 2vw;
+
+    background-image: url(/assets/images/webp/casaReviverEscrita.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: 150ms ease-in-out;
 }
 
-#logo-icon {
-    width: 100px;
+.menu figure:hover {
+    cursor: pointer;
+}
 
-    position: relative;
 
-    font: 4em 'disclaimer';
-    text-transform: uppercase;
-    letter-spacing: 1px;
-
-    color: #fff;
-    text-shadow: 0 0 0 white;
-    transition: .3s;
+@media (max-width:1000px){
+    
 }
 
 
@@ -88,8 +131,6 @@ a:visited {
     overflow: hidden;
 
     cursor: pointer;
-    /*?Testar*/
-    transition: .3s;
 }
 
 .line-hover {
