@@ -1,29 +1,117 @@
 @import url(propriedades.css);
+@import url(componentes.css);
 
 * {
+    /* asterístico sever para atribuir caracteristicas a todos os elementos */
     box-sizing: border-box;
+    /* considera a borda e margem para calcular o tamanho do elemento  */
     margin: 0;
+    /* define margem igual a zero */
+    scroll-behavior: smooth;
 }
 
-.container{
-    width: 100vw;
-    
+body {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.container {
+    width: 100%;
+    /* define que o tamanho deste elemento é 100% o tamanho do elemento pai, no caso, o body */
+
+    display: flex;
+    /* formata a organização do elemento para flex = flexível */
+    flex-direction: column;
+    /* faz com que todos os elementos contidos nele, esteja alinhados em forma de coluna */
+    /* justify-content: center; */
+    /* alinha todos os elementos contidos no centro do eixo X(linha horizontal) */
+
+    /* align-items: center; */
+    /* alinha todos os elementos contidos no centro do eixo Y(linha vertical) */
+}
+
+.section_container {
+    /* trabalha com a classe .section_container, que é um conjunto de objetos */
+    width: 100%;
+    height: 20vh;
+
+    /* vh = medida de acordo com a altura da tela que está exibindo o site */
+    /* vw = medida de acordo com a largura da tela */
+
+    /* background-color: rgba(16, 190, 16, 0.226); */
+    /* border: 2px dashed red; */
+}
+
+/* Section 1 - Capa */
+.section_container:nth-of-type(1) {
+    height: 90vh;
+
+    background: center -3vh / cover url(https://images.unsplash.com/photo-1607211851821-8be3cd6146f0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 0 0 15vh 0;
+
+}
+
+
+/* nav - Menu */
+
+/* Section 2 - Sobre*/
+section:has(#left, #rigth) {
+    height: 50vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+#left,#right{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 5%;
+}
+
+
+section:nth-of-type(2)>#right {
+    background: center / cover url(https://images.unsplash.com/photo-1614655652730-7ad98f6d8d0c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+/* Section 3 - Como Ajudar?*/
+section:nth-of-type(3) {
+    height: 25em;
     display: flex;
     justify-content: center;
     align-items: center;
 
+    box-shadow: 0 1px 10px var(--color-shadow), 0 -1px 10px var(--color-shadow);
 }
 
-section´:nth-of-type(1){
-    width: 100vw;
-    height: 20vh;
-    overflow: hidden;
-
-    background-color: aqua;
+section > div:has(button){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#section_capa > img {
-    background-size: cover;
-    visibility: hidden;
-    
+
+
+/* Section 4 - Venha fazer parte*/
+
+section:nth-of-type(4)>#left {
+    background: center / cover url(https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+
+/* footer */
+div:has(h4) > a{
+    margin: 6px 0 0 6px;
 }
