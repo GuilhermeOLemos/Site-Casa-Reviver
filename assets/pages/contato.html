@@ -7,18 +7,23 @@
     <title>Casa Reviver - Contatos</title>
     <link rel="icon" type="icon" href="/assets/images/ico/casaReviverLogo.ico">
     <link rel="stylesheet" href="/assets/styles/contato.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
-    <object data="assets/objetos/menubar/menu_bar.html" class="menu_object"></object>
+    <object data="/assets/objetos/menubar/menu_bar.html" class="menu_object"></object>
     <section class="text">
         <div class="contato_text">
             <h1 id="contatos" class="inter900">Contatos</h1>
-                <p id="legenda_contatos" class="inter300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</p>
-            </div>
+            <p id="legenda_contatos" class="inter300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+                massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur,
+                ultrices mauris.</p>
+        </div>
     </section>
 
     <hr class="divisor">
@@ -27,33 +32,38 @@
         <div id="telefone">
             <span class="material-symbols-outlined" id="telefone-icone">
                 call
-            </span><class="texto-contato" class="inter300">(xx)xxxxx-xxxx</class> 
+            </span><class="texto-contato" class="inter300">(xx)xxxxx-xxxx</class>
         </div>
         <div id="email">
             <span class="material-symbols-outlined" id="email-icone">
                 mail
-                </span><class="texto-contato" class="inter300">email@email.com</class> 
+            </span><class="texto-contato" class="inter300">email@email.com</class>
         </div>
         <div id="redes">
             <span class="material-symbols-outlined" id="celular-icone">
                 smartphone
-                </span><class="texto-contato" class="inter300">@casareviver</class> 
+            </span>
+            <a href="https://www.instagram.com/casareviver/?hl=en" target="_blank" class="inter300 texto-contato default_link">
+                @casareviver
+            </a>
         </div>
         <div id="voluntario">
             <p id="voluntario" class="inter300">
                 Deseja ser voluntário?
-                <a href="">Formulário de Voluntariado</a>
+                <a href="" class="default_link">Formulário de Voluntariado</a>
             </p>
-        </div>  
+        </div>
     </section>
 
     <hr class="divisor">
 
-    <section class="form">
-        <form action="">
-            <label id="email">Email<input type="text" class=""></label>
-            <label id="nome_completo">Nome Completo<input type="text" class=""></label>
-            <label id="mensagem"><textarea name=""></textarea></label>
+    <section class="form" id="form_contato">
+        <form action="" class="inter300">
+            <h4 id="duvida" class="inter300">Tire sua duvida aqui!</h4>
+            <label id="email-form">Email<input type="text" class="input" id="input_email"></label>
+            <label id="nome_completo">Nome Completo<input type="text" class="input" id="input_nome"></label>
+            <label id="mensagem">Mensagem<textarea name="" class="input" id="input_mensagem"></textarea></label>
+            <button class="small_button" id="botao_contato">Enviar</button>
         </form>
     </section>
 

@@ -85,6 +85,9 @@ body{
 
 
 /* Texto */
+a{
+    text-decoration: none;
+}
 .inter900 {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;

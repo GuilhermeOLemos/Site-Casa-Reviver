@@ -76,6 +76,10 @@
   margin-left: 200px;
 }
 
+.texto-contato {
+  color: black;
+}
+
 #telefone-icone, #celular-icone, #email-icone{
   width: 10%;
   color: #FFD058;
@@ -85,4 +89,42 @@
 #voluntario {
   margin-top: 30px;
   font-size: 17.6px;
+}
+
+#duvida {
+  margin-left: 200px;
+  margin-bottom: 20px;
+  color: #131313;
+}
+
+#email-form, #nome_completo, #mensagem {
+  display: block;
+  margin-left: 200px;
+  margin-bottom: 30px;
+}
+
+.input {
+  display: block;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #7575752c;
+}
+
+#input_email, #input_nome {
+  width: 500px;
+  height: 40px;
+}
+
+#input_mensagem {
+  width: 500px;
+  height: 200px;
+}
+
+#botao_contato {
+  border-radius: 10px;
+  border-style: none;
+  background-color: #FFD058;
+  margin-left: 605px;
+  margin-bottom: 50px;
+  font-size: 20px;
 }
