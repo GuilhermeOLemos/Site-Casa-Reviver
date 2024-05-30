@@ -1,3 +1,7 @@
+/* external css: flickity.css */
+
+@import url(/assets/styles/componentes.css);
+
 @import url(componentes.css);
 
 * {
@@ -8,3 +12,30 @@
     /* define margem igual a zero */
     scroll-behavior: smooth;
 }
+
+#titulo, #titulo2 {
+    margin-top: 100px;
+}
+
+.sobre_text, .historia_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#legenda_sobre, #legenda_historia {
+    color: #1e1e1e;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.divisor {
+    background-color: #d9d9d9;
+    align-self: stretch;
+    max-height: 1%;
+    margin: 170px 50px 40px 200px;
+    width: 1050px;
+  }
+  
+  /**/
