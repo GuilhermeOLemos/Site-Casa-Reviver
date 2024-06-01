@@ -1,4 +1,4 @@
-@import url(propriedades.css);
+@import url(/staticFiles/propriedades.css);
 
 body{
     display: flex;

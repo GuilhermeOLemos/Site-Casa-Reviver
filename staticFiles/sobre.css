@@ -1,6 +1,6 @@
 /* external css: flickity.css */
 
-@import url(/assets/styles/componentes.css);
+@import url(/staticFiles/componentes.css);
 
 @import url(componentes.css);
 
@@ -22,6 +22,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0 10px;
+    height: 400px;
 }
 
 #legenda_sobre, #legenda_historia {

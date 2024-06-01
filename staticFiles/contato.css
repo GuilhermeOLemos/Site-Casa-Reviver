@@ -1,6 +1,4 @@
-@import url(/assets/styles/componentes.css);
-
-@import url(componentes.css);
+@import url(/staticFiles/componentes.css);
 
 * {
     /* asterístico sever para atribuir caracteristicas a todos os elementos */

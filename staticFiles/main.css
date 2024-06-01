@@ -1,6 +1,6 @@
-@import url(propriedades.css);
-@import url(componentes.css);
-@import url(/assets/objetos/menubar/menu_bar.css);
+@import url(/staticFiles/propriedades.css);
+@import url(/staticFiles/componentes.css);
+@import url(/staticFiles/menu_bar.css);
 
 * {
     /* asterístico sever para atribuir caracteristicas a todos os elementos */
