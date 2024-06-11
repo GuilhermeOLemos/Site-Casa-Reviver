@@ -58,11 +58,11 @@
     <hr class="divisor">
 
     <section class="form" id="form_contato">
-        <form action="" class="inter300">
+        <form action="/acessoContato" class="inter300" method="post">
             <h4 id="duvida" class="inter300">Tire sua duvida aqui!</h4>
-            <label id="email-form">Email<input type="text" class="input" id="input_email"></label>
-            <label id="nome_completo">Nome Completo<input type="text" class="input" id="input_nome"></label>
-            <label id="mensagem">Mensagem<textarea name="" class="input" id="input_mensagem"></textarea></label>
+            <label id="email-form">Email<input type="text" name="emailCliente" class="input" id="input_email"></label>
+            <label id="nome_completo">Nome Completo<input type="text" class="input" name="nomeCliente" id="input_nome"></label>
+            <label id="mensagem">Mensagem<textarea name="mensagemCliente" class="input" id="input_mensagem"></textarea></label>
             <button class="small_button" id="botao_contato">Enviar</button>
         </form>
     </section>
