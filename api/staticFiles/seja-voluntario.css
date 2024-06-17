@@ -13,7 +13,9 @@
     background-color: red;
 }
 
-ladoDireito
+.ladoDireito {
+    background-color: blue;
+}
 
 .linhaCima, .linhaBaixo {
     background-color: #d9d9d9;
