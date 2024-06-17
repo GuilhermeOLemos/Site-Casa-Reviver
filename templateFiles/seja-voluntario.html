@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,48 @@
     <link rel="icon" type="icon" href="staticFiles/casaReviverLogo.ico">
     <link rel="stylesheet" href="staticFiles/eventos.css">
 </head>
+
 <body>
     <object data="/menu_bar.html" class="menu_object"></object>
-</body>
+
+    <div class="mae">
+
+        <div class="ladoEsquerdo">
+            <h3>Novo por aqui?</h3>
+            <h2>Preencha o formulário:</h2>
+
+            <section class="form" id="form_voluntario">
+                <form action="" class="inter300" method="post">
+                    <label for="nome"><input type="text" id="nome" placeholder="Nome:" /></label>
+                    <label for="email"><input type="email" id="emailVoluntario" placeholder="E-mail:"></label>
+                    <label for="telefone"><input type="tel" id="telefone" placeholder="Telefone:"></label>
+                    <label for="idade"><input type="text" id="" placeholder="Idade:"></label>
+                    <button id="botao_envio">Enviar</button>
+                </form>
+            </section>
+
+        </div>
+
+        <div class="meio">
+            <hr id="linhaCima">
+            <p id="pMeio">ou</p>
+            <hr id="linhaBaixo">
+        </div>
+
+        <div class="ladoDireito">
+            <h2 id="textoLogin">Faça seu login:</h2>
+            <section class="form" id="loginVoluntario">
+                <form action="" class="inter300" method="post">
+                    <label for="email"><input type="email" id="emailLogin" placeholder="E-mail:"></label>
+                    <label for="senha"><input type="password" id="senhaVoluntario" placeholder="Senha:"></label>
+                    <button id="botao_entrar">Entrar</button>
+                </form>
+            </section>
+        </div>
+
+    </div>
+
+    <object data="footer.html" class="footer_object"></object>
+</body>                                         
+
 </html>
