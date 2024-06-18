@@ -22,7 +22,7 @@ def acessoContato():
 
     
 
-    return redirect('/contato.html') 
+    return redirect('/index.html') 
 
 @app.route('/menu_bar.html') ## utilizado para definir Rotas(URLS) e nesse caso a rota está fazendo a leitura de um arquivo e renderizando o no HTML
 def html4():
