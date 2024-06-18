@@ -1,9 +1,7 @@
-# não está funcionando
-
 import mysql.connector
 
 conexao = mysql.connector.connect(
-    host='192.168.0.104',
+    host='localhost',
     user='root',
     passwd='',
     database='ongdb'
